@@ -1,4 +1,4 @@
-# BDD Test Automation Framework( Backend Test Challenges )
+# BDD Test Automation Framework( Backend Test + Fontend Challenges - Task 2 )
 
 ## Features supported
 1. Dependency management and project management by using MAVEN 

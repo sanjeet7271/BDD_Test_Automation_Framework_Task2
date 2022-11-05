@@ -2,19 +2,15 @@ package com.magnetopages;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
-
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import com.seleniumutility.SeleniumUtility;
 import com.userdto.User;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
-
 import java.time.Duration;
 import java.util.List;
-import java.util.Random;
 import java.util.UUID;
 
 public class MagnetoHomePage {
@@ -53,7 +49,6 @@ public class MagnetoHomePage {
 	private static final By NEXT_BUTTON = By.xpath("//span[text()='Next']");
 	private static final By PLACE_AN_ORDER_BUTTON = By.xpath("//span[text()='Place Order']");
 	private static final By ORDER_SUCCESS = By.xpath("//div[@class='checkout-success']//p[2]");
-	private static final By BAG_TITLE = By.cssSelector(".page-title>span");
 
 	public boolean isShopNewYogaButtonDisplayed() {
 		return $(SHOP_NEW_YOGA_BUTTON).isDisplayed();
